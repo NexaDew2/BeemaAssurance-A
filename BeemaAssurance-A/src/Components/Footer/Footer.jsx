@@ -1,7 +1,8 @@
 import React from "react";
-import Icontext from "../icontext/Icontext";
+
 import healthinsurance from "../../assets/healthinsurance.png";
 import logo from "../../assets/logo.png";
+import Icontext from "../Icontext/Icontext";
 
 function Footer() {
     return (
