@@ -12,7 +12,7 @@ function Navbar({ onLogoClick, onClaimsClick, onHealthClick, onKnowledgeClick })
             </div>
 
             {/* Navigation Links */}
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-6 display-flex">
                 <Navlinks
                     onClaimsClick={onClaimsClick}
                     onHealthClick={onHealthClick}
