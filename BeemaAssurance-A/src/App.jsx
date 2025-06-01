@@ -4,6 +4,8 @@ import Homepage from "./Components/Homepage/Homepage";
 import Claims from "./Components/Claims/Claims";
 //import HealthInsurance from "./Components/HealthInsurance/HealthInsurance";
 //import Knowledge from "./Components/Knowledge/Knowledge";
+import Footer from "./Components/Footer/Footer";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
     const homeRef = useRef(null);
@@ -39,6 +41,8 @@ function App() {
             <div ref={knowledgeRef}>
                 <Knowledge />
             </div>*/}
+            <Contact/>
+            <Footer/>
         </>
     );
 }
