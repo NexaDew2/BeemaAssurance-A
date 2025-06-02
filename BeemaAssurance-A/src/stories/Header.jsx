@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+import React from 'react';
+
+>>>>>>> 8a2b8829467f80228337cb97c375bc69e037dd28
 import PropTypes from 'prop-types';
 
 import { Button } from './Button';

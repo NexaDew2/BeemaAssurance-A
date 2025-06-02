@@ -13,7 +13,11 @@ export default {
 
 export const LoggedOut = {};
 
+<<<<<<< HEAD
 // More on component testing: https://storybook.js.org/docs/writing-tests/interaction-testing
+=======
+// More on component testing: https://storybook.js.org/docs/writing-tests/component-testing
+>>>>>>> 8a2b8829467f80228337cb97c375bc69e037dd28
 export const LoggedIn = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
