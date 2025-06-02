@@ -4,9 +4,11 @@ const config = {
   addons: [
     "@storybook/preset-create-react-app",
     "@storybook/addon-onboarding",
+
     "@storybook/addon-links",
     "@chromatic-com/storybook",
     "@storybook/addon-docs"
+
   ],
   framework: {
     name: "@storybook/react-webpack5",
