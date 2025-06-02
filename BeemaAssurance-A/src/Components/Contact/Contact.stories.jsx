@@ -10,6 +10,7 @@ export default {
 // 👇 Template for rendering the component
 const Template = (args) => <Contact/>;
 
+
 // 👇 Primary story using default props
 export const Default = Template.bind({});
 Default.args = {};

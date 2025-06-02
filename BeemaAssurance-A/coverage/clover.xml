@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <coverage generated="1748840806523" clover="3.2.0">
   <project timestamp="1748840806523" name="All files">
     <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+=======
+<coverage generated="1748838243988" clover="3.2.0">
+  <project timestamp="1748838243988" name="All files">
+    <metrics statements="58" coveredstatements="17" conditionals="18" coveredconditionals="4" methods="21" coveredmethods="5" elements="97" coveredelements="26" complexity="0" loc="58" ncloc="58" packages="5" files="11" classes="11"/>
+    <package name="Components.Contact">
+      <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="Contact.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\Components\Contact\Contact.jsx">
+        <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="15" type="stmt"/>
+        <line num="5" count="15" type="stmt"/>
+        <line num="7" count="15" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="11" count="15" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="31" count="15" type="stmt"/>
+      </file>
+    </package>
+    <package name="Components.Footer">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Footer.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\Components\Footer\Footer.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="7" type="stmt"/>
+      </file>
+      <file name="Footer.stories.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\Components\Footer\Footer.stories.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Components.Homepage">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="Homepage.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\Components\Homepage\Homepage.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Components.Navbar">
+      <metrics statements="10" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="Navbar.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\Components\Navbar\Navbar.jsx">
+        <metrics statements="10" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="stories">
+      <metrics statements="28" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <file name="Button.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\stories\Button.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+      </file>
+      <file name="Button.stories.js" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\stories\Button.stories.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+      </file>
+      <file name="Header.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\stories\Header.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+      </file>
+      <file name="Header.stories.js" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\stories\Header.stories.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+      <file name="Page.jsx" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\stories\Page.jsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="Page.stories.js" path="C:\Users\aksha\OneDrive\Desktop\assurance\BeemaAssurance-A\BeemaAssurance-A\src\stories\Page.stories.js">
+        <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+      </file>
+    </package>
+>>>>>>> c60b2210162e74bb9a035fe203f1e02500e828ae
   </project>
 </coverage>
