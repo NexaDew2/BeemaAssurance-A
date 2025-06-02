@@ -1,28 +1,31 @@
+
 import React, { useState } from "react";
 import Navlinks from "../Navlinks/Navlinks";
 import Button from "../Button/Button";
 import logo from "../../assets/logo.png";
 
-function Navbar({ onLogoClick, onClaimsClick, onHealthClick, onKnowledgeClick }) {
+function Navbar({
+  onLogoClick,
+  onClaimsClick,
+  onHealthClick,
+  onKnowledgeClick,
+  onBuyPolicyClick,  // Added this prop
+}) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
     { label: "Claims", onClick: onClaimsClick },
     { label: "Health", onClick: onHealthClick },
-    { label: "Knowledge", onClick: onKnowledgeClick }
+    { label: "Knowledge", onClick: onKnowledgeClick },
   ];
 
   return (
-    <nav className="bg-white  pr-10">
-      <div className="flex items-center justify-between  mx-auto">
+    <nav className="bg-white pr-10">
+      <div className="flex items-center justify-between mx-auto">
         {/* Logo */}
         <div className="cursor-pointer" onClick={onLogoClick}>
-  <img 
-    src={logo} 
-    alt="Logo" 
-    className="h-20 w-auto lg:w-90" 
-  />
-</div>
+          <img src={logo} alt="Logo" className="h-20 w-auto lg:w-90" />
+        </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
@@ -42,7 +45,7 @@ function Navbar({ onLogoClick, onClaimsClick, onHealthClick, onKnowledgeClick })
             width="w-36"
             height="h-10"
             borderRadius="rounded-full"
-            onClick={() => alert("Policy purchase flow")}
+            onClick={onBuyPolicyClick}  // Use the passed callback
           />
         </div>
 
@@ -70,7 +73,7 @@ function Navbar({ onLogoClick, onClaimsClick, onHealthClick, onKnowledgeClick })
               className={`text-left text-black font-semibold transform transition-all duration-300 ease-out opacity-0 translate-y-[-10px] animate-slide-in`}
               style={{
                 animationDelay: `${index * 0.1}s`,
-                animationFillMode: "forwards"
+                animationFillMode: "forwards",
               }}
             >
               {item.label}
@@ -85,13 +88,13 @@ function Navbar({ onLogoClick, onClaimsClick, onHealthClick, onKnowledgeClick })
             height="h-10"
             borderRadius="rounded-full"
             onClick={() => {
-              alert("Policy purchase flow");
+              onBuyPolicyClick();
               setIsMobileMenuOpen(false);
             }}
             className="animate-slide-in"
             style={{
               animationDelay: `${menuItems.length * 0.1}s`,
-              animationFillMode: "forwards"
+              animationFillMode: "forwards",
             }}
           />
         </div>
@@ -121,3 +124,4 @@ function Navbar({ onLogoClick, onClaimsClick, onHealthClick, onKnowledgeClick })
 }
 
 export default Navbar;
+

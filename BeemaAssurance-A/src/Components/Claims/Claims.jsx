@@ -1,8 +1,9 @@
+
 import React from "react";
 import clamis from "../../assets/clamis.png";
 import Button from "../Button/Button";
 
-function Claims() {
+function Claims({ onReachOutClick }) {
   return (
     <div className="flex flex-col items-center text-center px-4 py-10 bg-white">
       {/* Heading */}
@@ -25,10 +26,11 @@ function Claims() {
         width="w-60"
         height="h-12"
         borderRadius="rounded-lg"
-        onClick={() => alert("Redirecting to support...")}
+        onClick={onReachOutClick}  // Use the passed prop here
       />
     </div>
   );
 }
 
 export default Claims;
+
