@@ -1,33 +1,43 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Footer from './Footer';
+import { Default } from './Footer.stories';
 import '@testing-library/jest-dom';
 
-
-// Mock image imports so tests don't fail due to missing assets
-jest.mock('../../assets/healthinsurance.png', () => 'healthinsurance.png');
-jest.mock('../../assets/logo.png', () => 'logo.png');
-
-// Optionally, mock Icontext component if it contains logic or context
-jest.mock('../icontext/Icontext', () => () => <div>Mocked Icontext</div>);
-
 describe('Footer Component', () => {
-  test('renders health insurance image', () => {
+  beforeEach(() => {
     render(<Footer />);
-    const img = screen.getByAltText('Health Insurance Illustration');
-    expect(img).toBeInTheDocument();
-    expect(img).toHaveAttribute('src', 'healthinsurance.png');
   });
 
-  test('renders logo image', () => {
-    render(<Footer />);
-    const logo = screen.getByAltText('Beema Assurance Logo');
-    expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute('src', 'logo.png');
+  test('renders the footer container', () => {
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument();
   });
 
-  test('renders Icontext component', () => {
-    render(<Footer />);
-    expect(screen.getByText('Mocked Icontext')).toBeInTheDocument();
+  test('renders health insurance image with correct alt', () => {
+    expect(screen.getByAltText('Health Insurance Illustration')).toBeInTheDocument();
+  });
+
+  test('renders Beema Assurance logo', () => {
+    expect(screen.getByAltText('Beema Assurance Logo')).toBeInTheDocument();
+  });
+
+  test('renders Instagram icon and handle', () => {
+    expect(screen.getByAltText('Instagram')).toBeInTheDocument();
+    expect(screen.getByText('@beemaassurance')).toBeInTheDocument();
+  });
+
+  test('renders phone icon and number', () => {
+    expect(screen.getByAltText('Phone')).toBeInTheDocument();
+    expect(screen.getByText('+91 84537 39878')).toBeInTheDocument();
+  });
+
+  test('renders copyright text', () => {
+    expect(screen.getByText('© 2025 BeemaAssurance. All rights reserved.')).toBeInTheDocument();
+  });
+});
+
+describe('Footer Story', () => {
+  test('renders Footer story component', () => {
+    render(<Default {...Default.args} />);
   });
 });

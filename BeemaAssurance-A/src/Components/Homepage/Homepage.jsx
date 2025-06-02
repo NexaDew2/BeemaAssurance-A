@@ -41,13 +41,14 @@ function Homepage() {
   </div>
 
             {/* Logo Banner Section */}
-           <div>
+          <div>
   <img
     src={logo}
     alt="BeemaAssurance Logo"
-    className="w-400 h-50 object-cover"
+    className="w-60 h-12 object-cover lg:w-[1560px] lg:h-[180px]"
   />
 </div>
+
 
         </div>
     );

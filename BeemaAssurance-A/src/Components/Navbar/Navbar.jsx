@@ -13,12 +13,16 @@ function Navbar({ onLogoClick, onClaimsClick, onHealthClick, onKnowledgeClick })
   ];
 
   return (
-    <nav className="bg-white  px-4 py-3">
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
+    <nav className="bg-white  pr-10">
+      <div className="flex items-center justify-between  mx-auto">
         {/* Logo */}
         <div className="cursor-pointer" onClick={onLogoClick}>
-          <img src={logo} alt="Logo" className="h-14 w-auto" />
-        </div>
+  <img 
+    src={logo} 
+    alt="Logo" 
+    className="h-20 w-auto lg:w-90" 
+  />
+</div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">

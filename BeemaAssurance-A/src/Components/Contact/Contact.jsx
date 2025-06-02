@@ -29,12 +29,12 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className="py-16 px-4">
-      <div className="max-w-md w-full mx-auto">
+    <section id="contact" className="py-16 px-4">
+      <div className="max-w-md lg:max-w-xl w-full mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-left">Contact Us</h2>
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 bg-white p-6 "
+          className="space-y-6 bg-white p-6 lg:p-10"
         >
           <input
             name="name"
@@ -42,7 +42,7 @@ const Contact = () => {
             required
             onChange={handleChange}
             value={formData.name}
-            className="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none"
+            className="w-full max-w-full lg:max-w-lg border border-gray-400 rounded px-3 py-2 focus:outline-none"
           />
           <input
             name="email"
@@ -51,7 +51,7 @@ const Contact = () => {
             required
             onChange={handleChange}
             value={formData.email}
-            className="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none"
+            className="w-full max-w-full lg:max-w-lg border border-gray-400 rounded px-3 py-2 focus:outline-none"
           />
           <textarea
             name="message"
@@ -59,15 +59,19 @@ const Contact = () => {
             required
             onChange={handleChange}
             value={formData.message}
-            className="w-full border border-gray-400 rounded px-3 py-2 h-28 resize-none focus:outline-none"
+            className="w-full max-w-full lg:max-w-lg border border-gray-400 rounded px-3 py-2 h-28 resize-none focus:outline-none"
           />
           <button
             type="submit"
-            className="bg-[rgb(45,125,245)] text-white px-4 py-2 rounded hover:bg-blue-600 "
+            className="bg-[rgb(45,125,245)] text-white px-4 py-2 rounded hover:bg-blue-600"
           >
             Send
           </button>
-          <p className={`text-sm ${status.includes('successfully') ? 'text-green-600' : 'text-red-500'}`}>
+          <p
+            className={`text-sm ${
+              status.includes('successfully') ? 'text-green-600' : 'text-red-500'
+            }`}
+          >
             {status}
           </p>
         </form>

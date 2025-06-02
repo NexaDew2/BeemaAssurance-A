@@ -1,0 +1,1 @@
+[Footer Component](https://docs.google.com/document/d/1M7YO5deL2htfXu_mXXhRyBMXc1ItRfD1rvHWDKG3qTI/edit?tab=t.0#heading=h.z0dmn6m9lsen)
