@@ -45,7 +45,7 @@ function Homepage() {
   <img
     src={logo}
     alt="BeemaAssurance Logo"
-    className="w-60 h-12 object-cover lg:w-[1560px] lg:h-[180px]"
+    className="w-60 h-12 object-cover lg:w-[1560px] lg:h-[200px]"
   />
 </div>
 

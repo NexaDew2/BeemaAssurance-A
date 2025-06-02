@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import healthinsurance from '../../assets/healthinsurance.png';
 import logo from "../../assets/logo.png";
@@ -36,7 +38,7 @@ function Footer() {
                         </div>
 
                         {/* Phone */}
-                        <div className="flex items-center gap-2 px-2 py-1 rounded">
+                        <div className="flex items-center gap-  py-1 rounded">
                             <img src={phone} alt="Phone" className="w-6 h-6" />
                             <p className="text-black">+91 84537 39878</p>
                         </div>
@@ -47,3 +49,4 @@ function Footer() {
     );
 }
 export default Footer;
+
