@@ -8,7 +8,7 @@ const imageProps1 = {
   alt: 'Rich Dad Indian Health Insurance',
   text: (
     <div>
-      <p className="text-orange-500">
+      <p className="text-orange-500 text-2xl">
         If Rich Dad Poor Dad were written for Indian Audience, first chapter would be on Health Insurance
       </p> 
     </div>
@@ -22,8 +22,8 @@ const imageProps2 = {
   title: 'Our Offerings',
   text: (
     <div>
-      <h2 className="text-2xl font-bold mb-4">Our Offerings</h2>
-      <ul className="list-disc list-inside space-y-1 text-gray-700">
+      <h2 className="text-3xl font-bold mb-4 text-left py-4 pb-4"> Our Offerings</h2>
+      <ul className="list-disc list-inside space-y-3 text-gray-700 text-xl">
         <li>Full Claim Support</li>
         <li>Complete Transparency</li>
         <li>Best Advisory</li>

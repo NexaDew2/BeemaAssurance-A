@@ -3,7 +3,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
 import Claims from "./Components/Claims/Claims";
 import HealthInsurance from "./Components/HealthInsurance/HealthInsurance";
-//import HealthInsurance from "./Components/HealthInsurance/HealthInsurance";
 import Knowledge from "./Components/Knowledge/Knowledge";
 
 function App() {
@@ -28,13 +27,12 @@ function App() {
             <div ref={homeRef}>
                 <Homepage />
             </div>
+            <div ref={healthRef}>
+                <HealthInsurance />
+            </div>
 
             <div ref={claimsRef}>
                 <Claims />
-            </div>
-
-           <div ref={healthRef}>
-                <HealthInsurance />
             </div>
             
             <div ref={knowledgeRef}>

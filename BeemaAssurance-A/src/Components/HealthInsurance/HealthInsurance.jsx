@@ -7,8 +7,8 @@ const imageProps3 = {
   title: 'Benefits of Health Insurance',
     text: (
       <div>
-        <h2 className="text-2xl font-bold mb-4">Benefits of Health Insurance</h2>
-  <ul className="list-disc list-inside space-y-1 text-gray-700">
+        <h2 className="text-2xl font-bold mb-6 py-5 pb-4">Benefits of Health Insurance</h2>
+  <ul className="list-disc list-inside space-y-3 text-gray-700">
     <li> Cashless Hospitalization</li>
     <li> Fast Claim Settlement</li> 
     <li>Tax Benefits (Section 80D)</li>
