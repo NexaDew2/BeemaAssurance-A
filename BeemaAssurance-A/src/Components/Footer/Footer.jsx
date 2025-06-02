@@ -1,5 +1,5 @@
 import React from "react";
-import healthinsurance from "../../assets/healthinsurance.png";
+import healthinsurance from '../../assets/healthinsurance.png';
 import logo from "../../assets/logo.png";
 import insta from '../../assets/insta.png';
 import phone from '../../assets/phone.png';
