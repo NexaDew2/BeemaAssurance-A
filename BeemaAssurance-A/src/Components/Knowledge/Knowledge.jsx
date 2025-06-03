@@ -37,7 +37,7 @@ const imageProps2 = {
 
 const Knowledge = () => {
   return (
-    <div className="p-8 max-w-7xl mx-auto">
+    <div className="p-8 max-w-10xl mx-auto">
       <ImageText image={imageProps1.image} alt={imageProps1.alt} text={imageProps1.text} reverse={imageProps1.reverse}/>
       <ImageText image={imageProps2.image} alt={imageProps2.alt} text={imageProps2.text} reverse={imageProps2.reverse}/>
 

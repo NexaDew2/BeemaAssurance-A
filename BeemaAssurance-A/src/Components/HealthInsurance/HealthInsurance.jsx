@@ -7,8 +7,8 @@ const imageProps3 = {
   title: 'Benefits of Health Insurance',
     text: (
       <div>
-        <h2 className="text-2xl font-bold mb-6 py-5 pb-4">Benefits of Health Insurance</h2>
-  <ul className="list-disc list-inside space-y-3 text-gray-700">
+<h2 className="text-3xl font-bold mb-4 text-left py-5 pb-5"> Benefits of Health Insurance:</h2>
+      <ul className="list-disc list-inside space-y-3 text-gray-700 text-xl">
     <li> Cashless Hospitalization</li>
     <li> Fast Claim Settlement</li> 
     <li>Tax Benefits (Section 80D)</li>
@@ -21,7 +21,7 @@ const imageProps3 = {
 
 const HealthInsurance = () => {
   return (
-    <div className="p-8 max-w-7xl mx-auto">
+    <div className="p-8 py-10 px-2 max-w-10xl mx-auto">
       <ImageText image={imageProps3.image} alt={imageProps3.alt} text={imageProps3.text} reverse={imageProps3.reverse}/>
     </div>
   );

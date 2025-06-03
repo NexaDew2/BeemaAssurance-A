@@ -31,21 +31,19 @@ function App() {
       <div ref={homeRef}>
         <Homepage />
       </div>
-      
+
+      <div ref={knowledgeRef}>
+          <Knowledge />
+        </div>
+    
+      <div ref={claimsRef}>
+        <Claims onReachOutClick={() => scrollToSection(contactRef)} />  
+      </div>
+
       <div ref={healthRef}>
           <HealthInsurance />
         </div>
 
-      <div ref={claimsRef}>
-        <Claims onReachOutClick={() => scrollToSection(contactRef)} />
-        
-      </div>
-
-      
-
-        <div ref={knowledgeRef}>
-          <Knowledge />
-        </div>
 
       <div ref={contactRef}> 
         <Contact />
