@@ -23,14 +23,15 @@ const imageProps2 = {
   text: (
     <div>
       <h2 className="text-3xl font-bold mb-4 text-left py-2 pb-6"> Our Offerings</h2>
-      <ul className="list-disc list-inside space-y-3 text-left text-black-700 pb-10 pl-6 text-xl">
-        <li>Full Claim Support</li>
-        <li>Complete Transparency</li>
-        <li>Best Advisory</li>
-        <li>No Spam Calls</li>
-        <li>Comprehensive Support</li>
-        <li>Personalized Recommendation</li>
-      </ul>
+      <ul className="list-disc list-inside space-y-3 text-left text-black-700 pb-10 pl-4 text-xl">
+       <li>Full Claim Support</li>
+       <li>Complete Transparency</li>
+       <li>Best Advisory</li>
+       <li>No Spam Calls</li>
+       <li>Comprehensive Support</li>
+       <li className="whitespace-nowrap">Personalized Recommendation</li>
+</ul>
+
     </div>
   ),
 };
