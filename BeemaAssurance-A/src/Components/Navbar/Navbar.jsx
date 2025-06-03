@@ -8,7 +8,9 @@ function Navbar({
   onClaimsClick,
   onHealthClick,
   onKnowledgeClick,
+
   onBuyPolicyClick,
+
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -44,7 +46,9 @@ function Navbar({
             width="w-36"
             height="h-10"
             borderRadius="rounded-full"
+
             onClick={onBuyPolicyClick}
+
           />
         </div>
 

@@ -6,7 +6,9 @@ import logo from "../../assets/logo.png";
 
 function Homepage() {
     return (
+
         <div className="flex flex-col items-center gap-10  "> 
+
   
   <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl gap-12 md:gap-60">
     
