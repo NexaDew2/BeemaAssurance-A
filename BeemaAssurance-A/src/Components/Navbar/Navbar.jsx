@@ -15,12 +15,20 @@ function Navbar({
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center gap-6 display-flex">
+                <Navlinks
+                    onClaimsClick={onClaimsClick}
+                    onHealthClick={onHealthClick}
+                    onKnowledgeClick={onKnowledgeClick}
+                />
+            </div>
   const menuItems = [
     { label: "Claims", onClick: onClaimsClick },
     { label: "Health", onClick: onHealthClick },
     { label: "Knowledge", onClick: onKnowledgeClick },
   ];
-
   return (
     <nav className="bg-white pr-10">
       <div className="flex items-center justify-between mx-auto">
