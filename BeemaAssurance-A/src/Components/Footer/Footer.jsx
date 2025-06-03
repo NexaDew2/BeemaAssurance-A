@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import healthinsurance from '../../assets/healthinsurance.png';
 import logo from "../../assets/logo.png";
@@ -30,19 +29,19 @@ function Footer() {
                         <h2 className="text-xl text-center">© 2025 BeemaAssurance. All rights reserved.</h2>
                     </div>
 
-                    <div className="flex justify-between items-center w-full px-4 py-2">
-                        {/* Instagram */}
-                        <div className="flex items-center gap-2">
-                            <img src={insta} alt="Instagram" className="w-10 h-8" />
-                            <p className="text-black">@beemaassurance</p>
-                        </div>
+                   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full px-4 py-2 gap-2">
+  {/* Instagram */}
+  <div className="flex items-center gap-2">
+    <img src={insta} alt="Instagram" className="w-6 h-6" />
+    <p className="text-black">@beemaassurance</p>
+  </div>
 
-                        {/* Phone */}
-                        <div className="flex items-center gap-  py-1 rounded">
-                            <img src={phone} alt="Phone" className="w-6 h-6" />
-                            <p className="text-black">+91 84537 39878</p>
-                        </div>
-                    </div>
+  {/* Phone */}
+  <div className="flex items-center gap-2 py-1 rounded">
+    <img src={phone} alt="Phone" className="w-6 h-6" />
+    <p className="text-black">+91 84537 39878</p>
+  </div>
+</div>
                 </div>
             </div>
         </footer>

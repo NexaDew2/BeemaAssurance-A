@@ -9,7 +9,9 @@ function Navbar({
   onClaimsClick,
   onHealthClick,
   onKnowledgeClick,
-  onBuyPolicyClick,  // Added this prop
+
+  onBuyPolicyClick,
+
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -36,7 +38,7 @@ function Navbar({
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           <Navlinks
             onClaimsClick={onClaimsClick}
             onHealthClick={onHealthClick}
@@ -45,7 +47,7 @@ function Navbar({
         </div>
 
         {/* Desktop Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button
             label="Buy Policy"
             bgColor="bg-green-900"
@@ -53,24 +55,27 @@ function Navbar({
             width="w-36"
             height="h-10"
             borderRadius="rounded-full"
-            onClick={onBuyPolicyClick}  // Use the passed callback
+
+            onClick={onBuyPolicyClick}
+
           />
         </div>
 
-        {/* Hamburger Icon */}
-        <div className="md:hidden">
+        {/* Mobile/Tablet Hamburger Icon */}
+        <div className="lg:hidden">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-3xl focus:outline-none"
+            aria-label="Toggle mobile menu"
           >
             {isMobileMenuOpen ? "×" : "☰"}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile/Tablet Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden mt-4 space-y-3 px-4 flex flex-col animate-fade-in">
+        <div className="lg:hidden mt-4 space-y-3 px-4 flex flex-col animate-fade-in">
           {menuItems.map((item, index) => (
             <button
               key={item.label}
@@ -78,7 +83,7 @@ function Navbar({
                 item.onClick();
                 setIsMobileMenuOpen(false);
               }}
-              className={`text-left text-black font-semibold transform transition-all duration-300 ease-out opacity-0 translate-y-[-10px] animate-slide-in`}
+              className="text-left text-black font-semibold transform transition-all duration-300 opacity-0 translate-y-[-10px] animate-slide-in"
               style={{
                 animationDelay: `${index * 0.1}s`,
                 animationFillMode: "forwards",
@@ -108,7 +113,7 @@ function Navbar({
         </div>
       )}
 
-      {/* Custom Animations */}
+      {/* Animations */}
       <style>
         {`
           @keyframes slideIn {
