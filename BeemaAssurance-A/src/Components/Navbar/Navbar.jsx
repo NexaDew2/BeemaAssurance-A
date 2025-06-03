@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navlinks from "../Navlinks/Navlinks";
 import Button from "../Button/Button";
@@ -30,8 +29,8 @@ function Navbar({
     { label: "Knowledge", onClick: onKnowledgeClick },
   ];
   return (
-    <nav className="bg-white pr-10">
-      <div className="flex items-center justify-between mx-auto">
+    <nav className="bg-white pr-10 fixed top-0 left-0 w-full z-50 ">
+      <div className="flex items-center justify-between mx-auto ">
         {/* Logo */}
         <div className="cursor-pointer" onClick={onLogoClick}>
           <img src={logo} alt="Logo" className="h-20 w-auto lg:w-90" />
@@ -137,4 +136,3 @@ function Navbar({
 }
 
 export default Navbar;
-
