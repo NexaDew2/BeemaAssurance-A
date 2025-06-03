@@ -8,7 +8,7 @@ const ImageText = ({ image, alt, text, reverse }) => {
           {text}
         </div>
         <div className="w-full md:w-1/2 flex justify-center">
-          <img src={image} alt={alt} className="w-64 md:w-[32rem]" />
+          <img src={image} alt={alt} className="w-64 md:w-[24rem]" />
         </div>
       </div>
     </div>
