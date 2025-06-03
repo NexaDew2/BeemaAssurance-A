@@ -33,7 +33,7 @@ function Homepage() {
 </div>
     
     {/* Umbrella Image */}
-    <div className="flex justify-center flex-1 ">
+    <div className="flex justify-center flex-1 pt-20">
       <img
         src={umberlaa}
         alt="Family under Umbrella"
