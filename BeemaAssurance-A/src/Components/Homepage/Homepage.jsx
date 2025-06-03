@@ -6,12 +6,12 @@ import logo from "../../assets/logo.png";
 
 function Homepage() {
     return (
-        <div className="flex flex-col items-center gap-10 "> 
+        <div className="flex flex-col items-center gap-10  "> 
   
   <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl gap-12 md:gap-60">
     
     {/* WhatsApp Icon + Button */}
-    <div className="mb-6 md:mb-0 md:mr-12 flex flex-row items-center space-x-2 pt-10">
+    <div className="mb-6 md:mb-0 md:mr-12 flex flex-row items-center space-x-2 pt-30">
   <img
     src={wapp}
     alt="Whatsapp Icon"
@@ -31,7 +31,7 @@ function Homepage() {
 </div>
     
     {/* Umbrella Image */}
-    <div className="flex justify-center flex-1">
+    <div className="flex justify-center flex-1 ">
       <img
         src={umberlaa}
         alt="Family under Umbrella"

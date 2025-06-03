@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navlinks from "../Navlinks/Navlinks";
 import Button from "../Button/Button";
@@ -9,9 +8,7 @@ function Navbar({
   onClaimsClick,
   onHealthClick,
   onKnowledgeClick,
-
   onBuyPolicyClick,
-
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,8 +19,8 @@ function Navbar({
   ];
 
   return (
-    <nav className="bg-white pr-10">
-      <div className="flex items-center justify-between mx-auto">
+    <nav className="bg-white pr-10 fixed top-0 left-0 w-full z-50 ">
+      <div className="flex items-center justify-between mx-auto ">
         {/* Logo */}
         <div className="cursor-pointer" onClick={onLogoClick}>
           <img src={logo} alt="Logo" className="h-20 w-auto lg:w-90" />
@@ -47,9 +44,7 @@ function Navbar({
             width="w-36"
             height="h-10"
             borderRadius="rounded-full"
-
             onClick={onBuyPolicyClick}
-
           />
         </div>
 
@@ -129,4 +124,3 @@ function Navbar({
 }
 
 export default Navbar;
-
