@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import healthinsurance from '../../assets/healthinsurance.png';
 import logo from "../../assets/logo.png";
@@ -43,17 +42,6 @@ function Footer() {
     <p className="text-black">+91 84537 39878</p>
   </div>
 </div>
-
-
-<<<<<<< HEAD
-=======
-                        {/* Phone */}
-                        <div className="flex items-center gap-  py-1 rounded">
-                            <img src={phone} alt="Phone" className="w-6 h-6" />
-                            <p className="text-black">+91 84537 39878</p>
-                        </div>
-                    </div>
->>>>>>> 8a2b8829467f80228337cb97c375bc69e037dd28
                 </div>
             </div>
         </footer>

@@ -9,11 +9,9 @@ function Navbar({
   onClaimsClick,
   onHealthClick,
   onKnowledgeClick,
-<<<<<<< HEAD
+
   onBuyPolicyClick,
-=======
-  onBuyPolicyClick,  // Added this prop
->>>>>>> 8a2b8829467f80228337cb97c375bc69e037dd28
+
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -49,11 +47,9 @@ function Navbar({
             width="w-36"
             height="h-10"
             borderRadius="rounded-full"
-<<<<<<< HEAD
+
             onClick={onBuyPolicyClick}
-=======
-            onClick={onBuyPolicyClick}  // Use the passed callback
->>>>>>> 8a2b8829467f80228337cb97c375bc69e037dd28
+
           />
         </div>
 
