@@ -23,7 +23,7 @@ const imageProps2 = {
   text: (
     <div>
       <h2 className="text-3xl font-bold mb-4 text-left py-4 pb-4"> Our Offerings</h2>
-      <ul className="list-disc list-inside space-y-3 text-gray-700 text-xl">
+      <ul className="list-disc list-inside space-y-3 text-left text-gray-700 text-xl">
         <li>Full Claim Support</li>
         <li>Complete Transparency</li>
         <li>Best Advisory</li>
